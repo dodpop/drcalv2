@@ -1,0 +1,85 @@
+@font-face {
+  font-family: "Flaticon";
+  src: url("./Flaticon.eot");
+  src: url("./Flaticon.eot?#iefix") format("embedded-opentype"),
+       url("./Flaticon.woff2") format("woff2"),
+       url("./Flaticon.woff") format("woff"),
+       url("./Flaticon.ttf") format("truetype"),
+       url("./Flaticon.svg#Flaticon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: "Flaticon";
+    src: url("./Flaticon.svg#Flaticon") format("svg");
+  }
+}
+
+.fimanager:before {
+      display: inline-block;
+  font-family: "Flaticon";
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  line-height: 1;
+  text-decoration: inherit;
+  text-rendering: optimizeLegibility;
+  text-transform: none;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+    display: block;
+}
+
+.flaticon-001-scientist:before { content: "\f100"; }
+.flaticon-002-test-tubes:before { content: "\f101"; }
+.flaticon-003-barometer:before { content: "\f102"; }
+.flaticon-004-magnet:before { content: "\f103"; }
+.flaticon-005-mortar:before { content: "\f104"; }
+.flaticon-006-gas-bottle:before { content: "\f105"; }
+.flaticon-007-toxic-waste:before { content: "\f106"; }
+.flaticon-008-beaker:before { content: "\f107"; }
+.flaticon-009-stand:before { content: "\f108"; }
+.flaticon-010-wash-bottle:before { content: "\f109"; }
+.flaticon-011-graduated-cylinder:before { content: "\f10a"; }
+.flaticon-012-bunsen-burner:before { content: "\f10b"; }
+.flaticon-013-microscope:before { content: "\f10c"; }
+.flaticon-014-telescope:before { content: "\f10d"; }
+.flaticon-015-bunsen-burner:before { content: "\f10e"; }
+.flaticon-016-chemical-record:before { content: "\f10f"; }
+.flaticon-017-experiment:before { content: "\f110"; }
+.flaticon-018-syringe:before { content: "\f111"; }
+.flaticon-019-presentation:before { content: "\f112"; }
+.flaticon-020-pipette:before { content: "\f113"; }
+.flaticon-021-science:before { content: "\f114"; }
+.flaticon-022-battery:before { content: "\f115"; }
+.flaticon-023-scientist:before { content: "\f116"; }
+.flaticon-024-id-card:before { content: "\f117"; }
+.flaticon-025-gas-mask:before { content: "\f118"; }
+.flaticon-026-chemical:before { content: "\f119"; }
+.flaticon-027-bacteria:before { content: "\f11a"; }
+.flaticon-028-experiment:before { content: "\f11b"; }
+.flaticon-029-radioactive:before { content: "\f11c"; }
+.flaticon-030-dna:before { content: "\f11d"; }
+.flaticon-031-radioactive:before { content: "\f11e"; }
+.flaticon-032-radioactive:before { content: "\f11f"; }
+.flaticon-033-gas-cylinder:before { content: "\f120"; }
+.flaticon-034-laboratory-equipment:before { content: "\f121"; }
+.flaticon-035-scientist:before { content: "\f122"; }
+.flaticon-036-scientist:before { content: "\f123"; }
+.flaticon-037-test-tube:before { content: "\f124"; }
+.flaticon-038-bunsen-burner:before { content: "\f125"; }
+.flaticon-039-chemistry:before { content: "\f126"; }
+.flaticon-040-bacteria:before { content: "\f127"; }
+.flaticon-041-science:before { content: "\f128"; }
+.flaticon-042-chemical-record:before { content: "\f129"; }
+.flaticon-043-scalpel:before { content: "\f12a"; }
+.flaticon-044-plant:before { content: "\f12b"; }
+.flaticon-045-thermometer:before { content: "\f12c"; }
+.flaticon-046-sample:before { content: "\f12d"; }
+.flaticon-047-medical-mask:before { content: "\f12e"; }
+.flaticon-048-experiment:before { content: "\f12f"; }
+.flaticon-049-rat:before { content: "\f130"; }
+.flaticon-050-flask:before { content: "\f131"; }
