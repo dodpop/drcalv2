@@ -104,30 +104,30 @@ autoplaySpeed: 800,
 $('.expert_active').owlCarousel({
   loop:true,
   margin:30,
-items:1,
-autoplay:true,
-navText:['<i class="ti-angle-left"></i>','<i class="ti-angle-right"></i>'],
+  items:1,
+  autoplay:true,
+  navText:['<i class="ti-angle-left"></i>','<i class="ti-angle-right"></i>'],
   nav:true,
-dots:false,
-autoplayHoverPause: true,
-autoplaySpeed: 800,
+  dots:false,
+  autoplayHoverPause: true,
+  autoplaySpeed: 800,
   responsive:{
       0:{
-          items:1,
-          nav:false
+          items:2,
+          nav:true
       },
       767:{
           items:2,
-          nav:false
+          nav:true
       },
       992:{
           items:3
       },
       1200:{
-          items:4
+          items:5
       },
       1500:{
-          items:4
+          items:5
       }
   }
 });

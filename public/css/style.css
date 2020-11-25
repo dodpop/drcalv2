@@ -275,11 +275,11 @@ h3 {
   position: absolute;
   content: "";
   /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#5db2ff+0,7db9e8+100&1+24,0+96 */
-  background: -moz-linear-gradient(left, #5db2ff 0%, #65b4f9 24%, rgba(124, 185, 233, 0) 96%, rgba(125, 185, 232, 0) 100%);
+  background: -moz-linear-gradient(left, #25bd76 0%, #9ff7d5 24%, rgba(124, 185, 233, 0) 96%, rgba(125, 185, 232, 0) 100%);
   /* FF3.6-15 */
-  background: -webkit-linear-gradient(left, #5db2ff 0%, #65b4f9 24%, rgba(124, 185, 233, 0) 96%, rgba(125, 185, 232, 0) 100%);
+  background: -webkit-linear-gradient(left, #25bd76 0%, #9ff7d5 24%, rgba(124, 185, 233, 0) 96%, rgba(125, 185, 232, 0) 100%);
   /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(to right, #5db2ff 0%, #65b4f9 24%, rgba(124, 185, 233, 0) 96%, rgba(125, 185, 232, 0) 100%);
+  background: linear-gradient(to right, #25bd76 0%, #9ff7d5 24%, rgba(124, 185, 233, 0) 96%, rgba(125, 185, 232, 0) 100%);
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5db2ff', endColorstr='#007db9e8',GradientType=1 );
   /* IE6-9 */
@@ -837,7 +837,7 @@ h3 {
 
 /* line 15, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_header.scss */
 .header-area .main-header-area {
-  padding: 5px 0;
+  padding: 10px 0;
   background: #fff;
 }
 
@@ -922,7 +922,7 @@ h3 {
 
 /* line 77, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_header.scss */
 .header-area .main-header-area .Appointment .book_btn {
-  margin-left: 30px;
+  margin-left: 0;
 }
 
 @media (min-width: 992px) and (max-width: 1200px) {
@@ -976,7 +976,7 @@ h3 {
 .header-area .main-header-area .main-menu ul li {
   display: inline-block;
   position: relative;
-  margin: 0 10px;
+  margin: 0 20px;
 }
 
 /* line 118, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_header.scss */
@@ -990,6 +990,10 @@ h3 {
   font-family: "Poppins", 'Prompt', sans-serif;
   position: relative;
   text-transform: capitalize;
+}
+
+.header-area .main-header-area .main-menu ul li a.active {
+  color: #006E3A;
 }
 
 @media (min-width: 992px) and (max-width: 1200px) {
@@ -1241,7 +1245,7 @@ h3 {
 
 /* line 4, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_slider.scss */
 .slider_bg_2 {
-  background-image: url(../img/banner/banner2.png);
+  background-image: url(/public/img/BANNER_2020_1920x600-01.jpg);
 }
 
 /* line 8, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_slider.scss */
@@ -1278,8 +1282,9 @@ h3 {
 @media (max-width: 767px) {
   /* line 17, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_slider.scss */
   .slider_area .single_slider .slider_text h3 {
-    font-size: 33px;
+    font-size: 30px;
     letter-spacing: 3px;
+    line-height: 33px;
   }
 }
 
@@ -1323,14 +1328,14 @@ h3 {
 
 /* line 1, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_about.scss */
 .welcome_docmed_area {
-  padding-top: 120px;
-  padding-bottom: 220px;
+  padding-top: 90px;
+  padding-bottom: 90px;
 }
 
 @media (max-width: 767px) {
   /* line 1, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_about.scss */
   .welcome_docmed_area {
-    padding-bottom: 100px;
+    padding-bottom: 30px;
   }
 }
 
@@ -2234,8 +2239,8 @@ h3 {
 
 /* line 6, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_footer.scss */
 .footer .footer_top {
-  padding-top: 145px;
-  padding-bottom: 129px;
+  padding-top: 90px;
+  padding-bottom: 90px;
   background: #1F1F1F;
 }
 
@@ -2401,7 +2406,7 @@ h3 {
 
 /* line 122, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_footer.scss */
 .footer .copy-right_text {
-  padding-bottom: 30px;
+  padding-bottom: 20px;
   background: #000000;
 }
 
@@ -2473,6 +2478,11 @@ h3 {
   background-image: url(../img/banner/bradcam.png);
 }
 
+.breadcam_about_bg {
+  background-image: url(/public/img/bradcam.png);
+}
+
+
 /* line 4, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_bradcam.scss */
 .breadcam_bg_1 {
   background-image: url(../img/banner/bradcam2.png);
@@ -2488,7 +2498,7 @@ h3 {
   padding: 170px;
   background-size: cover;
   background-position: center center;
-  padding: 148px 0px;
+  padding: 100px 0px;
   background-repeat: no-repeat;
 }
 
@@ -2496,6 +2506,10 @@ h3 {
   /* line 10, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_bradcam.scss */
   .bradcam_area {
     padding: 120px 0;
+  }
+  .breadcam_about_bg {
+    /* background-size: 100%;
+    background-position: right; */
   }
 }
 
@@ -2688,7 +2702,7 @@ h3 {
 /* line 1, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_department.scss */
 .our_department_area {
   background: #F5FBFF;
-  padding-top: 120px;
+  padding-top: 90px;
   padding-bottom: 90px;
 }
 
@@ -2916,8 +2930,8 @@ h3 {
 
 /* line 1, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_experts.scss */
 .expert_doctors_area {
-  padding-top: 120px;
-  padding-bottom: 120px;
+  padding-top: 90px;
+  padding-bottom: 90px;
 }
 
 /* line 4, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_experts.scss */
@@ -2928,8 +2942,8 @@ h3 {
 @media (max-width: 767px) {
   /* line 1, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_experts.scss */
   .expert_doctors_area {
-    padding-top: 80px;
-    padding-bottom: 80px;
+    padding-top: 30px;
+    padding-bottom: 30px;
   }
 }
 
@@ -2973,7 +2987,7 @@ h3 {
   -moz-transition: 0.3s;
   -o-transition: 0.3s;
   transition: 0.3s;
-  background: #F5FBFF;
+  background: #FFFFFF;
   padding-top: 16px;
   padding-bottom: 18px;
 }
@@ -2997,6 +3011,8 @@ h3 {
   -moz-transition: 0.3s;
   -o-transition: 0.3s;
   transition: 0.3s;
+  line-height: 16px!important;
+  display: inline-block;
 }
 
 /* line 51, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_experts.scss */
@@ -3116,12 +3132,12 @@ h3 {
 
 /* line 36, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_emergency_contact.scss */
 .emergency_bg_1 {
-  background-image: url(../img/banner/emergency-1.png);
+  background-image: url(/public/img/emergency-1.png);
 }
 
 /* line 39, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_emergency_contact.scss */
 .emergency_bg_2 {
-  background-image: url(../img/banner/emergency-2.png);
+  background-image: url(/public/img/emergency-2.png);
 }
 
 /*=================== contact banner start ====================*/
@@ -3662,7 +3678,7 @@ h6 {
 .generic-blockquote {
   padding: 30px 50px 30px 30px;
   background: #f9f9ff;
-  border-left: 2px solid #ff5e13;
+  border-left: 2px solid #00BA63;
 }
 
 /* line 353, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_elements.scss */

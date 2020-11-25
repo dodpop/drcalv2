@@ -30,84 +30,73 @@
         <![endif]-->
 <!-- header-start -->
 <header>
-<div class="header-area ">
-<div class="header-top_area">
-<div class="container">
-<div class="row">
-<div class="col-xl-4 col-md-6 ">
-<div class="social_media_links">
-<!-- <a href="#">
-<i class="fa fa-linkedin"></i>
-</a> -->
-
-<small>GIBTHAI A 3N Holding Company</small>
-<!-- <a href="#">
-<i class="fa fa-google-plus"></i>
-</a> -->
-</div>
-</div>
-<div class="col-xl-8 col-md-6">
-<div class="short_contact_list">
-<ul>
-<li>
-<a href="https://www.facebook.com/doctorcalFAN/" target="_blank">
-<i class="fa fa-facebook"></i> doctorcalFAN</a></li>
-<li><a href="#"> <i class="fa fa-envelope"></i> sales@doctorcalibration.com</a></li>
-<li><a href="#"> <i class="fa fa-phone"></i> 66 (0) 2277 8557</a></li>
-</ul>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div id="sticky-header" class="main-header-area">
-<div class="container">
-<div class="row align-items-center">
-<div class="col-xl-2 col-lg-2">
-    <div class="logo">
-        <a href="index-2.html" class="logo-img">
-            <img src="/public/img/logo.png" alt="" class="">   
-        </a>
-    </div>
-</div>
-<div class="col-xl-7 col-lg-7">
-<div class="main-menu  d-none d-lg-block">
-<nav>
-<ul id="navigation">
-<li><a class="active" href="index-2.html">home</a></li>
-<li><a href="Department.html">Department</a></li>
-<li><a href="#">blog <i class="ti-angle-down"></i></a>
-<ul class="submenu">
-<li><a href="blog.html">blog</a></li>
-<li><a href="single-blog.html">single-blog</a></li>
-</ul>
-</li>
-<li><a href="#">pages <i class="ti-angle-down"></i></a>
-<ul class="submenu">
-<li><a href="elements.html">elements</a></li>
-<li><a href="about.html">about</a></li>
-</ul>
-</li>
-<li><a href="Doctors.html">Doctors</a></li>
-<li><a href="contact.html">Contact</a></li>
-</ul>
-</nav>
-</div>
-</div>
-<div class="col-xl-3 col-lg-3 d-none d-lg-block">
-<div class="Appointment">
-<div class="book_btn d-none d-lg-block">
-<a class="popup-with-form" href="#test-form">Make an Appointment</a>
-</div>
-</div>
-</div>
-<div class="col-12">
-<div class="mobile_menu d-block d-lg-none"></div>
-</div>
-</div>
-</div>
-</div>
-</div>
+   <div class="header-area ">
+      <div class="header-top_area">
+         <div class="container">
+            <div class="row">
+               <div class="col-xl-4 col-md-6 ">
+                  <div class="social_media_links">
+                     <!-- <a href="#">
+                        <i class="fa fa-linkedin"></i>
+                        </a> -->
+                     <small>GIBTHAI A 3N Holding Company</small>
+                     <!-- <a href="#">
+                        <i class="fa fa-google-plus"></i>
+                        </a> -->
+                  </div>
+               </div>
+               <div class="col-xl-8 col-md-6">
+                  <div class="short_contact_list">
+                     <ul>
+                        <li>
+                           <a href="https://www.facebook.com/doctorcalFAN/" target="_blank">
+                           <i class="fa fa-facebook"></i> doctorcalFAN</a>
+                        </li>
+                        <li><a href="#"> <i class="fa fa-envelope"></i> sales@doctorcalibration.com</a></li>
+                        <li><a href="#"> <i class="fa fa-phone"></i> 66 (0) 2277 8557</a></li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div id="sticky-header" class="main-header-area">
+         <div class="container">
+            <div class="row align-items-center">
+               <div class="col-xl-2 col-lg-2">
+                  <div class="logo">
+                     <a href="/" class="logo-img">
+                     <img src="/public/img/logo.png" alt="" class="">   
+                     </a>
+                  </div>
+               </div>
+               <div class="col-xl-8 col-lg-8">
+                  <div class="main-menu  d-none d-lg-block">
+                     <nav>
+                        <ul id="navigation">
+                           <li><a class="<?php echo ($activemenu=="home")? "active":""; ?>" href="/">Home</a></li>
+                           <li><a class="<?php echo ($activemenu=="services")? "active":""; ?>"href="/services">Services</a></li>
+                           <li><a class="<?php echo ($activemenu=="aboutus")? "active":""; ?>"href="/aboutus">About Us</a></li>
+                           <li><a class="<?php echo ($activemenu=="news")? "active":""; ?>"href="/news">News & Activities</a></li>
+                           <li class="d-lg-none <?php echo ($activemenu=="contactus")? "active":""; ?>"><a href="/contactus" >Contact</a></li>
+                        </ul>
+                     </nav>
+                  </div>
+               </div>
+               <div class="col-xl-2 col-lg-2 d-none d-lg-block">
+                  <div class="Appointment">
+                     <div class="book_btn d-none d-lg-block">
+                        <a class="" href="/contactus">Contact Us</a>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-12">
+                  <div class="mobile_menu d-block d-lg-none"></div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
 </header>
 <!-- header-end -->
 <?php
@@ -115,101 +104,125 @@
                 echo $content;
 
 ?>
+<!-- Emergency_contact start -->
+<div class="Emergency_contact">
+	<div class="conatiner-fluid p-0">
+		<div class="row no-gutters">
+			<div class="col-xl-6">
+				<div class="single_emergency d-flex align-items-center justify-content-center emergency_bg_1 overlay_skyblue">
+					<div class="info">
+						<h3>สนใจสอบเทียบ<br>สอบถามนัดวันเวลา</h3>
+						<!-- <p>สนใจสอบเทียบ สอบถามนัดวันเวลาหรือข้อมูลอื่นๆ ติดต่อได้ที่ </p> -->
+					</div>
+					<div class="info_button"> <a href="tel:6622778557" class="boxed-btn3-white">66 (0) 2277 8557</a> </div>
+				</div>
+			</div>
+			<div class="col-xl-6">
+				<div class="single_emergency d-flex align-items-center justify-content-center emergency_bg_2 overlay_skyblue">
+					<div class="info">
+						<h3>ฝากข้อความถึงเรา<br>หรือสอบถามข้อมูลอื่นๆ</h3>
+						<!-- <p>Esteem spirit temper 	too say adieus.</p> -->
+					</div>
+					<div class="info_button"> <a href="/contactus" class="boxed-btn3-white">Contact Us</a> </div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- Emergency_contact end -->
 <!-- footer start -->
 <footer class="footer">
-<div class="footer_top">
-<div class="container">
-<div class="row">
-<div class="col-xl-3 col-md-6 col-lg-4">
-<div class="footer_widget">
-<div class="footer_logo">
-<a href="/">
-<img src="/public/img/logo.png" alt="" class="img-fluid">
-</a>
-</div>
-<p>
-ห้องปฏิบัติการสอบเทียบได้รับการรับรอง
-ISO/IEC 17025
-</p>
-<div class="socail_links">
-<ul>
-<li>
-<a href="https://www.facebook.com/doctorcalFAN/" target="_blank">
-<i class="ti-facebook"></i>
-</a>
-</li>
-<li>
-<!-- <a href="#">
-<i class="ti-twitter-alt"></i>
-</a>
-</li>
-<li>
-<a href="#">
-<i class="fa fa-instagram"></i>
-</a> -->
-</li>
-</ul>
-</div>
-</div>
-</div>
-<div class="col-xl-2 offset-xl-1 col-md-6 col-lg-3">
-<div class="footer_widget">
-<h3 class="footer_title">
-Departments
-</h3>
-<ul>
-<li><a href="#">Eye Care</a></li>
-<li><a href="#">Skin Care</a></li>
-<li><a href="#">Pathology</a></li>
-<li><a href="#">Medicine</a></li>
-<li><a href="#">Dental</a></li>
-</ul>
-</div>
-</div>
-<div class="col-xl-2 col-md-6 col-lg-2">
-<div class="footer_widget">
-<h3 class="footer_title">
-Useful Links
-</h3>
-<ul>
-<li><a href="#">About</a></li>
-<li><a href="#">Blog</a></li>
-<li><a href="#">About</a></li>
-<li><a href="#"> Contact</a></li>
-<li><a href="#"> Appointment</a></li>
-</ul>
-</div>
-</div>
-<div class="col-xl-4 col-md-6 col-lg-3">
-<div class="footer_widget">
-<h3 class="footer_title">
-Address
-</h3>
-<p>
-Doctor Calibration Co.,Ltd<br>
-3N Holding Building 44/6 Suthisarnvinitchai Rd. Samsennok Huay Kwang, Bangkok 10310, THAILAND
-<br>
-<i class="fa fa-phone"></i> 66 (0) 2277 8557 <br>
-<i class="fa fa-envelope"></i> info@doctorcalibration.com<br><i class="fa fa-paper-plane"></i> sales@doctorcalibration.com
-</p>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="copy-right_text">
-<div class="container">
-<div class="footer_border"></div>
-<div class="row">
-<div class="col-xl-12">
-<p class="copy_right text-center">
-
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | 
-</p>
-</div>
-</div>
-</div>
-</div>
+   <div class="footer_top">
+      <div class="container">
+         <div class="row">
+            <div class="col-xl-3 col-md-6 col-lg-4">
+               <div class="footer_widget">
+                  <div class="footer_logo">
+                     <a href="/">
+                     <img src="/public/img/logo.png" alt="" class="img-fluid">
+                     </a>
+                  </div>
+                  <p>
+                     ห้องปฏิบัติการสอบเทียบได้รับการรับรอง
+                     ISO/IEC 17025
+                  </p>
+                  <div class="socail_links">
+                     <ul>
+                        <li>
+                           <a href="https://www.facebook.com/doctorcalFAN/" target="_blank">
+                           <i class="ti-facebook"></i>
+                           </a>
+                        </li>
+                        <li>
+                           <!-- <a href="#">
+                              <i class="ti-twitter-alt"></i>
+                              </a>
+                              </li>
+                              <li>
+                              <a href="#">
+                              <i class="fa fa-instagram"></i>
+                              </a> -->
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+            <!-- <div class="col-xl-2  col-md-6 col-lg-3">
+               <div class="footer_widget">
+                  <h3 class="footer_title">
+                     Departments
+                  </h3>
+                  <ul>
+                     <li><a href="#">Eye Care</a></li>
+                     <li><a href="#">Skin Care</a></li>
+                     <li><a href="#">Pathology</a></li>
+                     <li><a href="#">Medicine</a></li>
+                     <li><a href="#">Dental</a></li>
+                  </ul>
+               </div>
+            </div> -->
+            <div class="col-xl-4 offset-xl-1 col-md-6 col-lg-4">
+               <div class="footer_widget">
+                  <h3 class="footer_title">
+                     Links
+                  </h3>
+                  <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/services">Services</a></li>
+                    <li><a href="/aboutus">About Us</a></li>
+                    <li><a href="/news">News & Activities</a></li>
+                    <li><a href="/contactus" >Contact</a></li>
+               </div>
+            </div>
+            <div class="col-xl-4 col-md-6 col-lg-3">
+               <div class="footer_widget">
+                  <h3 class="footer_title">
+                     Address
+                  </h3>
+                  <p>
+                     Doctor Calibration Co.,Ltd<br>
+                     3N Holding Building 44/6 Suthisarnvinitchai Rd. Samsennok Huay Kwang, Bangkok 10310, THAILAND
+                     <br>
+                     <i class="fa fa-phone"></i> 66 (0) 2277 8557 <br>
+                     <i class="fa fa-envelope"></i> info@doctorcalibration.com<br><i class="fa fa-paper-plane"></i> sales@doctorcalibration.com
+                  </p>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <div class="copy-right_text">
+      <div class="container">
+         <div class="footer_border"></div>
+         <div class="row">
+            <div class="col-xl-12">
+               <p class="copy_right text-center">
+                  Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | Doctor Calibration Co.,Ltd
+               </p>
+            </div>
+         </div>
+      </div>
+   </div>
 </footer>
 <!-- footer end  -->
 <!-- link that opens popup -->
