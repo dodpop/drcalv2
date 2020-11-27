@@ -75,7 +75,7 @@
                      <nav>
                         <ul id="navigation">
                            <li><a class="<?php echo ($activemenu=="home")? "active":""; ?>" href="/">Home</a></li>
-                           <li><a class="<?php echo ($activemenu=="services")? "active":""; ?>"href="/services">Services</a></li>
+                           <li><a class="<?php echo ($activemenu=="services")? "active":""; ?>"href="/services">Our Services</a></li>
                            <li><a class="<?php echo ($activemenu=="aboutus")? "active":""; ?>"href="/aboutus">About Us</a></li>
                            <li><a class="<?php echo ($activemenu=="news")? "active":""; ?>"href="/news">News & Activities</a></li>
                            <li class="d-lg-none <?php echo ($activemenu=="contactus")? "active":""; ?>"><a href="/contactus" >Contact</a></li>
@@ -188,7 +188,7 @@
                   </h3>
                   <ul>
                     <li><a href="/">Home</a></li>
-                    <li><a href="/services">Services</a></li>
+                    <li><a href="/services">Our Services</a></li>
                     <li><a href="/aboutus">About Us</a></li>
                     <li><a href="/news">News & Activities</a></li>
                     <li><a href="/contactus" >Contact</a></li>
@@ -287,18 +287,20 @@
 <script src="/public/js/scrollIt.js"></script>
 <script src="/public/js/jquery.scrollUp.min.js"></script>
 <script src="/public/js/wow.min.js"></script>
-<script src="/public/js/nice-select.min.js"></script>
+<!-- <script src="/public/js/nice-select.min.js"></script> -->
 <script src="/public/js/jquery.slicknav.min.js"></script>
 <script src="/public/js/jquery.magnific-popup.min.js"></script>
 <script src="/public/js/plugins.js"></script>
 <script src="/public/js/gijgo.min.js"></script>
 <!--contact js-->
-<script src="/public/js/contact.js"></script>
+<!-- <script src="/public/js/contact.js"></script> -->
 <script src="/public/js/jquery.ajaxchimp.min.js"></script>
 <script src="/public/js/jquery.form.js"></script>
 <script src="/public/js/jquery.validate.min.js"></script>
 <script src="/public/js/mail-script.js"></script>
 <script src="/public/js/main.js"></script>
+
+<script src="/public/js/jquery.easyPaginate.js"></script>
 
 </body>
 </html>

@@ -75,9 +75,46 @@
 	</div>
 </div>
 <!-- welcome_docmed_area_end -->
-  
-<!-- expert_doctors_area_start -->
-<div class="expert_doctors_area">
+ 
+<!-- Services_area_start -->
+<div class="expert_doctors_area index_page pt-0 mb-1">
+	<div class="container">
+		<div class="row">
+			<div class="col-xl-12">
+				<div class="doctors_title mb-55">
+					<h3>Our Services</h3> </div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-xl-12">
+				<div class="expert_active owl-carousel">
+					<?php
+                        if(isset($services) && sizeof($services) > 0){
+                        	foreach ($services as $key_data => $value_data){
+                    ?>
+					<div class="single_expert">
+						<div class="expert_thumb">
+							<img src="<?php echo $value_data['service_img']; ?>" alt="<?php echo $value_data['service_name']; ?> <?php echo $value_data['service_range']; ?>">
+						</div>
+						<div class="experts_name text-center">
+							<h3><?php echo $value_data['service_name']; ?></h3>
+							<span><?php echo $value_data['service_range']; ?></span>
+						</div>
+					</div> 
+					<?php
+                            }
+                        }
+                	?>
+					
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- Services_area_end -->
+
+<!-- Clients_area_start -->
+<div class="expert_doctors_area index_page pt-0">
 	<div class="container">
 		<div class="row">
 			<div class="col-xl-12">
@@ -109,4 +146,4 @@
 		</div>
 	</div>
 </div>
-<!-- expert_doctors_area_end -->
+<!-- Clients_area_end -->

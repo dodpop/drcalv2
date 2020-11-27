@@ -2,7 +2,7 @@
 defined('BASEPATH') OR exit('No direct script access allowed');
 
 
-class Welcome extends CI_Controller {
+class Services extends CI_Controller {
 
 	public function __construct(){
 		parent::__construct();
@@ -11,13 +11,11 @@ class Welcome extends CI_Controller {
 	
 	public function index()
 	{
-		$client =  $this->lm->get_client();
-		$data_['client'] = $client;
 		$services =  $this->lm->get_services();
 		$data_['services'] = $services;
-		$content = $this->load->view('index', $data_, true);
+		$content = $this->load->view('services', $data_, true);
 		$data_['content'] = $content;
-		$data_['activemenu'] =  "home";
+		$data_['activemenu'] =  "services";
 		$this->load->view('template', $data_);   
 	}
 }

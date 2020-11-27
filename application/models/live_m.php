@@ -8,24 +8,43 @@ class Live_m extends CI_Model
   }
 
   public function get_client(){
+      $this->db->select('*');
+      $this->db->from('tbl_client');
+      // $this->db->where('intActive', '1');
+      $this->db->order_by('client_id','DESC');
+      $data = $this->db->get()->result_array();
+      //echo $this->db->last_query();
+      return $data;
+  }
+  public function get_services(){
     $this->db->select('*');
-    $this->db->from('tbl_client');
-    // $this->db->where('intActive', '1');
-     $this->db->order_by('client_id','DESC');
+    $this->db->from('tbl_service');
+    //  $this->db->where('intActive', '1');
+      $this->db->order_by('service_name','ASC');
     $data = $this->db->get()->result_array();
     //echo $this->db->last_query();
     return $data;
- }
- public function get_services(){
-   $this->db->select('*');
-   $this->db->from('tbl_services');
-   $this->db->where('intActive', '1');
-    $this->db->order_by('intProductNewID','DESC');
-   $data = $this->db->get()->result_array();
-   //echo $this->db->last_query();
-   return $data;
-}
- 
+  }
+  public function get_news(){
+    $this->db->select('*');
+    $this->db->from('tbl_news');
+     $this->db->where('Active', '1');
+      $this->db->order_by('ID','DESC');
+    $data = $this->db->get()->result_array();
+    //echo $this->db->last_query();
+    return $data;
+  } 
+
+  public function get_news_by_id($newsid){
+    $this->db->select('*');
+    $this->db->from('tbl_news');
+    $this->db->where('ID', $newsid);
+     $this->db->where('Active', '1');
+      // $this->db->order_by('ID','ASC');
+    $data = $this->db->get()->result_array();
+    //echo $this->db->last_query();
+    return $data;
+  } 
 
 
   public function insert_contactus($arr=array()){

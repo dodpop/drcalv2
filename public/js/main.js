@@ -15,6 +15,12 @@ $(window).on('scroll', function () {
 
 $(document).ready(function(){
 
+  $('#easyPaginate_blog').easyPaginate({
+    paginateElement: 'article',
+    elementsPerPage: 4,
+    effect: 'climb'
+  });
+
 // mobile_menu
 var menu = $('ul#navigation');
 if(menu.length){
@@ -275,7 +281,7 @@ dots:false,
 });
 
 if (document.getElementById('default-select')) {
-  $('select').niceSelect();
+  // $('select').niceSelect();
 }
 
   //about-pro-active
@@ -308,6 +314,9 @@ dots:false,
       }
   }
 });
+
+
+
 
 });
 
