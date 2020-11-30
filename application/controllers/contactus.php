@@ -81,7 +81,7 @@ class Contactus extends CI_Controller {
                       $config['mailtype'] = 'html';
                       $this->email->initialize($config);
                       $this->email->from('noreply@doctorcalibration.com', 'Doctor Calibration Website');
-                      $emailadmin = "noreply@doctorcalibration.com";
+                      $emailadmin = "apimsarnwat@gmail.com";
 
                       $this->email->to($emailadmin);
                       //$this->email->cc('another@another-example.com');

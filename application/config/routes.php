@@ -52,3 +52,41 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 $route['default_controller'] = 'welcome';
 $route['404_override'] = 'error_404';
 $route['translate_uri_dashes'] = FALSE;
+
+ 
+$route['admin'] = 'admin_user/index';
+$route['admin/welcome'] = 'admin_user/welcome';
+$route['admin/login'] = 'admin_user/index';
+$route['admin/logout'] = 'admin_user/logout';
+$route['admin/login/validate_credentials'] = 'admin_user/validate_credentials';
+
+$route['admin/users'] = 'admin_user/userslist';
+$route['admin/signup'] = 'admin_user/signup';
+$route['admin/users/add'] = 'admin_user/add';
+$route['admin/users/update/(:any)'] = 'admin_user/update/$1';
+$route['admin/users/delete/(:any)'] = 'admin_user/delete/$1';
+$route['admin/users/index/(:any)'] = 'admin_user/userslist/$1';
+
+$route['admin/newsupdate'] = 'admin_newsupdate/index';
+$route['admin/newsupdate/index/(:any)'] = 'admin_newsupdate/index/$1';
+$route['admin/newsupdate/add'] = 'admin_newsupdate/add';
+$route['admin/newsupdate/update'] = 'admin_newsupdate/update';
+$route['admin/newsupdate/update/(:any)'] = 'admin_newsupdate/update/$1';
+$route['admin/newsupdate/delete/(:any)'] = 'admin_newsupdate/delete/$1';
+$route['admin/newsupdate/deletenewsupdateimage/(:any)'] = 'admin_newsupdate/deletenewsupdateimage/$1';
+
+$route['admin/promotion'] = 'admin_promotion/index';
+$route['admin/promotion/list'] = 'admin_promotion/index';
+$route['admin/promotion/add'] = 'admin_promotion/add';
+$route['admin/promotion/update'] = 'admin_promotion/update';
+$route['admin/promotion/update/(:any)'] = 'admin_promotion/update/$1';
+$route['admin/promotion/delete/(:any)'] = 'admin_promotion/delete/$1';
+$route['admin/promotion/(:any)'] = 'admin_promotion/index/$1'; //$1 = page number
+
+$route['admin/product'] = 'admin_product/index';
+$route['admin/product/list'] = 'admin_product/index';
+$route['admin/product/add'] = 'admin_product/add';
+$route['admin/product/update'] = 'admin_product/update';
+$route['admin/product/update/(:any)'] = 'admin_product/update/$1';
+$route['admin/product/delete/(:any)'] = 'admin_product/delete/$1';
+$route['admin/product/(:any)'] = 'admin_product/index/$1'; //$1 = page number

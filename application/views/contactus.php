@@ -42,7 +42,8 @@
                      <div class="form-group">
                         <input class="form-control valid" name="your-email" id="your-email" type="your-email" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter email address'" placeholder="Email" value="<?php echo ($this->session->flashdata('email')) ? $this->session->flashdata('email'):''; ?>">
                      </div>
-                  </div>
+                  </div>                  
+
                   <div class="col-6">
                      <div class="form-group">
                             <select name="your-subject" id="your-subject" class="form-control">
@@ -55,10 +56,22 @@
                         <!-- <input class="form-control" name="your-subject" id="your-subject" type="text" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter Subject'" placeholder="Enter Subject"> -->
                      </div>
                   </div>
+
+                  <div class="col-sm-6">
+                     <div class="form-group">
+                        <script src='https://www.google.com/recaptcha/api.js'></script>
+                        <p><div class="g-recaptcha" data-sitekey="<?php echo $this->config->item('google_key') ?>"></div></p>
+                        </div>
+                  </div>
+
+                  <div class="col-sm-6">
+                  <div class="form-group mt-3">
+                     <button type="submit" class="button button-contactForm boxed-btn">Send</button>
+                     </div>
+                  </div>
+
                </div>
-               <div class="form-group mt-3">
-                  <button type="submit" class="button button-contactForm boxed-btn">Send</button>
-               </div>
+               
             </form>
          </div>
          <div class="col-lg-3 offset-lg-1">

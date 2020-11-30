@@ -219,6 +219,7 @@
                <p class="copy_right text-center">
                   Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | Doctor Calibration Co.,Ltd
                </p>
+               <small class="text-center"><a href="https://www.freepik.com/photos/education">Education photo created by freepik - www.freepik.com</a></small>
             </div>
          </div>
       </div>
