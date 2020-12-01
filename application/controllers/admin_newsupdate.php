@@ -54,7 +54,7 @@ class Admin_newsupdate extends MY_AdminLogin_Controller {
           if ($last_id > 0){
             $this->admin_newsupdate_model->update_newsupdate($last_id, $data_to_store);
           }else{
-            array_push($data_to_store, ['dateupdate' =>  date('Y-m-d H:i:s')]);
+            $data_to_store = array_merge($data_to_store, array("dateupdate"=>date('Y-m-d H:i:s')));
             $last_id = $this->admin_newsupdate_model->store_newsupdate($data_to_store);
           }
 
@@ -124,6 +124,7 @@ class Admin_newsupdate extends MY_AdminLogin_Controller {
 
         }else{
             //load the view
+            $data_['test'] = '';
             $content = $this->load->view('admin/newsupdate/add', $data_, true);
             $data_['content'] = $content;
             $data_['activemenu'] = "newsupdate";

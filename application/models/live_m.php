@@ -19,7 +19,7 @@ class Live_m extends CI_Model
   public function get_services(){
     $this->db->select('*');
     $this->db->from('tbl_service');
-    //  $this->db->where('intActive', '1');
+     $this->db->where('Effective', '1');
       $this->db->order_by('service_name','ASC');
     $data = $this->db->get()->result_array();
     //echo $this->db->last_query();

@@ -45,12 +45,12 @@ class Admin_product extends MY_AdminLogin_Controller {
 
 
           $data_to_store = array(
-              'ProductName' => $this->input->post('ProductName'),
-              // 'ProductCode' => $this->input->post('ProductCode'),
+              'service_name' => $this->input->post('service_name'),
+              'service_range' => $this->input->post('service_range'),
               // 'Description' => $this->input->post('Description'),
               'Effective' => $this->input->post('intbitEffective')
           );
-          $last_id = $this->input->post('ProductID');
+          $last_id = $this->input->post('service_id');
 
           if ($last_id > 0){
             $this->admin_product_model->update_product($last_id, $data_to_store);
@@ -61,7 +61,7 @@ class Admin_product extends MY_AdminLogin_Controller {
                 if($last_id){
                     $data['flash_message'] = TRUE;
 
-                    $config['upload_path']          = './user_files/product/';
+                    $config['upload_path']          = './public/service/';
                     $config['allowed_types']        = 'jpg|jpeg|png|gif|JPG|JPEG|PNG|GIF';
                     $config['max_size']             = 0;
                     $config['max_width']            = 0;
@@ -72,9 +72,9 @@ class Admin_product extends MY_AdminLogin_Controller {
                    if ($this->upload->do_upload('strPic1')) {
                             // Files Upload Success
                             // echo "OK Good";
-                            $thisfile = $this->upload->data('strPic1');
+                            $thisfile = $this->upload->data();
                             $data_to_store = array(
-                                'Picture' => "/user_files/product/".$thisfile['file_name']
+                                'service_img' => "/public/service/".$thisfile['file_name']
                             );
                             $this->admin_product_model->update_product($last_id, $data_to_store);
                     } else {

@@ -2,20 +2,18 @@
 
 			 if(!empty($all_data[0]))
 				{
-					$ProductID = $all_data[0]['ProductID'];
-					$strProductName = $all_data[0]["ProductName"];
-
-
+					$service_id = $all_data[0]['service_id'];
+					$strservice_name = $all_data[0]["service_name"];
+					$service_range = $all_data[0]["service_range"];
 					$intbitEffective = $all_data[0]["Effective"];
-					$picture = $all_data[0]["Picture"];
+					$service_img = $all_data[0]["service_img"];
 
 				}else{
-					$ProductID = NULL;
-					$strProductName = NULL;
-
-
+					$service_id = NULL;
+					$strservice_name = NULL;
+					$service_range = NULL;
 					$intbitEffective = NULL;
-					$picture = NULL;
+					$service_img = NULL;
 
 				}
 
@@ -23,14 +21,14 @@
 				<!-- Title -->
 				<div class="row heading-bg">
 					<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-						<h5 class="txt-dark">Add/Edit Product</h5>
+						<h5 class="txt-dark">Add/Edit Service</h5>
 					</div>
 					<!-- Breadcrumb -->
 					<div class="col-lg-8 col-sm-8 col-md-8 col-xs-12">
 						<ol class="breadcrumb">
 						<li><a href="<?=base_url();?>">Home</a></li>
-						<li><a href="<?=base_url();?>admin/product"><span>All Products</span></a></li>
-						<li class="active"><span>Add/Edit Product</span></li>
+						<li><a href="<?=base_url();?>admin/product"><span>All Services</span></a></li>
+						<li class="active"><span>Add/Edit Service</span></li>
 						</ol>
 					</div>
 					<!-- /Breadcrumb -->
@@ -41,12 +39,12 @@
 					<div class="row">
 
 <form method="post" name="form" id="form" enctype="multipart/form-data">
-<input type="hidden" name="ProductID" id="ProductID" value="<?php echo $ProductID; ?>" />
+<input type="hidden" name="service_id" id="service_id" value="<?php echo $service_id; ?>" />
 						<div class="col-md-12">
 							<div class="panel panel-default border-panel card-view">
 								<div class="panel-heading">
 									<div class="pull-left">
-										<h6 class="panel-title txt-dark">Products Information Form</h6>
+										<h6 class="panel-title txt-dark">Services Information Form</h6>
 									</div>
 									<!-- <div class="pull-right">
 									* Last updated by <?php echo $update_by_name; ?> (<?php echo $update_date;?>)
@@ -56,54 +54,61 @@
 								<div class="panel-wrapper collapse in">
 									<div class="panel-body">
 
-														<div class="col-sm-6">
-														<div class="form-group">
-															<label class="control-label mb-10 text-left">Product Name</label>
-															<input type='text' class="form-control input-group" id='ProductName' name="ProductName" autocomplete="off" value="<?=$strProductName;?>" required/>
+											<div class="col-sm-6">
+											<div class="form-group">
+												<label class="control-label mb-10 text-left">Service Name</label>
+												<input type='text' class="form-control input-group" id='service_name' name="service_name" autocomplete="off" value="<?=$strservice_name;?>" required/>
+											</div>
+											</div>
+
+											<div class="col-sm-6">
+											<div class="form-group">
+												<label class="control-label mb-10 text-left">Service Range</label>
+												<input type='text' class="form-control input-group" id='service_range' name="service_range" autocomplete="off" value="<?=$service_range;?>" required/>
+											</div>
+											</div>
+
+
+											<div class="col-sm-3">
+													<div class="form-group">
+														<label class="control-label mb-10 text-left">Service Image</label>
+														<input type="file" name="strPic1" id="strPic1" size="80" value="" class="form-control">
+													</div>
+											</div>
+
+
+
+											<div class="col-sm-2">
+													<div class="form-group">
+														<label class="control-label mb-10 text-left">&nbsp;</label>
+														<?php
+																		if($service_img != ""){
+																			echo "<a    href='".$service_img."' target='_blank' class=\"btn   btn-anim form-control \"> View Service service_img </a>";
+																		}
+														?>
+													</div>
+											</div>
+
+
+											<div class="col-sm-1">
+													<div class="form-group">
+														<label class="control-label mb-10 text-left">Active</label>
+														<div class="checkbox checkbox-primary">
+															<input  type="checkbox"  name="intbitEffective_" id="intbitEffective_"  value="1" <?php echo ($intbitEffective==1?"checked":""); ?> />
+															<label for="intbitEffective_">
+																Active ?
+															</label>
 														</div>
-														</div>
- 
+													</div>
+											</div>
+											<input type="hidden" name="intbitEffective" id="intbitEffective" value="<?php echo $intbitEffective; ?>" />
 
-														<div class="col-sm-3">
-																<div class="form-group">
-																	<label class="control-label mb-10 text-left">Product Picture</label>
-																	<input type="file" name="strPic1" id="strPic1" size="80" value="" class="form-control">
-																</div>
-														</div>
-
-
-
-														<div class="col-sm-2">
-																<div class="form-group">
-																	<label class="control-label mb-10 text-left">&nbsp;</label>
-																	<?php
-																				  if($picture != ""){
-																					  echo "<a    href='".$picture."' target='_blank' class=\"btn   btn-anim form-control \"> View Product Picture </a>";
-																				  }
-																	?>
-																</div>
-														</div>
-
-
-														<div class="col-sm-1">
-																<div class="form-group">
-																	<label class="control-label mb-10 text-left">Active</label>
-																	<div class="checkbox checkbox-primary">
-																		<input  type="checkbox"  name="intbitEffective_" id="intbitEffective_"  value="1" <?php echo ($intbitEffective==1?"checked":""); ?> />
-																		<label for="intbitEffective_">
-																			Active ?
-																		</label>
-																	</div>
-																</div>
-														</div>
-														<input type="hidden" name="intbitEffective" id="intbitEffective" value="<?php echo $intbitEffective; ?>" />
-
-														<div class="col-sm-4 pull-right">
-															<div class="form-group">
-																<label class="control-label mb-10 text-left">&nbsp;</label>
-																<button type="submit" class="btn btn-success btn-anim form-control text-white" name="btnSubmit" id="btnSubmit"><i class="fa fa-check"></i><span class="btn-text">Save</span></button>
-															</div>
-														</div>
+											<div class="col-sm-4 pull-right">
+												<div class="form-group">
+													<label class="control-label mb-10 text-left">&nbsp;</label>
+													<button type="submit" class="btn btn-success btn-anim form-control text-white" name="btnSubmit" id="btnSubmit"><i class="fa fa-check"></i><span class="btn-text">Save</span></button>
+												</div>
+											</div>
 
 											</div>
 									</div>
@@ -150,8 +155,8 @@
 
 					</style>
 
-					<script src="<?=base_url();?>admin_assets/jqueryui/jquery.min.js"></script>
-					<script src="<?=base_url();?>admin_assets/jqueryui/jquery-ui.min.js"></script>
+					<script src="<?=base_url();?>public/admin_assets/jqueryui/jquery.min.js"></script>
+					<script src="<?=base_url();?>public/admin_assets/jqueryui/jquery-ui.min.js"></script>
 					<script language="JavaScript">
 
 					var $ = jQuery.noConflict();
@@ -174,8 +179,8 @@
 
 
 
-				// $("#btnSubmit").click(function(product){
-				$("#form").submit(function(product){
+				// $("#btnSubmit").click(function(Service){
+				$("#form").submit(function(Service){
 
 											event.preventDefault();
 
@@ -201,7 +206,7 @@
 							            }
 							        });
 
-											// check_product_expire();
+											// check_Service_expire();
 
 											if ( ! fail ) {
 
@@ -238,7 +243,7 @@
 																		 // BootstrapDialog.confirm('Infomation has been saved, Close add/edit page?', function(result) {
 																     //     if (result)
 																				 // alert('Infomation has been saved.');
-																			 if ($("#ProductID").val()>0){
+																			 if ($("#service_id").val()>0){
  																					location.reload();
  																				}else{
  																					 window.location="<?=base_url();?>admin/product/index/saved";

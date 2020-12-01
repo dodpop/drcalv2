@@ -11,7 +11,7 @@ class Admin_services_model extends CI_Model {
     {
     		$this->db->select('*');
     		$this->db->from('tbl_services');
-    		$this->db->where('intProductNewID', $id);
+    		$this->db->where('service_id', $id);
     		$query = $this->db->get();
     		return $query->result_array();
     }
@@ -20,6 +20,7 @@ class Admin_services_model extends CI_Model {
     {
         $this->db->select('*');
         $this->db->from('tbl_services');
+        $this->db->where('Effective', $id);
         $order_type = 'DESC';
         $this->db->order_by('intProductNewID', $order_type);
         $query = $this->db->get();

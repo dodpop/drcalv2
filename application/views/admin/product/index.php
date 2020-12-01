@@ -2,13 +2,13 @@
 					<!-- Row -->
 					<div class="row heading-bg">
 						<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-						  <h5 class="txt-dark">Products  <button class="btn btn-info btn-icon-anim btn-addnew" onclick="window.location='<?=base_url();?>admin/product/add';"><i class="fa fa-plus"></i> New</button></h5>
+						  <h5 class="txt-dark">Services  <button class="btn btn-info btn-icon-anim btn-addnew" onclick="window.location='<?=base_url();?>admin/product/add';"><i class="fa fa-plus"></i> New</button></h5>
 						</div>
 						<!-- Breadcrumb -->
 						<div class="col-lg-8 col-sm-8 col-md-8 col-xs-12">
 						  <ol class="breadcrumb">
 							<li><a href="/admin/welcome">Home</a></li>
-							<li class="active"><span>Products</span></li>
+							<li class="active"><span>Services</span></li>
 						  </ol>
 						</div>
 						<!-- /Breadcrumb -->
@@ -41,14 +41,13 @@
                         <table id="" class="table  table_desc   table-hover display  pb-30" >
                            <thead>
                               <tr >
-                                 <th>ID</th>
-                                 <th>Name</th>
-																 <th>Product Picture</th>
-
-
-																 <th>Effective</th>
-                                 <th></th>
-                                 <th></th>
+                                <th>#</th>
+                                <th>Service Product</th>
+								<th>Image</th>
+								<th>Range</th>
+								<th>Effective</th>
+                                <th></th>
+                                <th></th>
                               </tr>
                            </thead>
                            <tbody>
@@ -57,18 +56,16 @@
 																foreach ($all_data as  $value_data){
                           		?>
                               <tr>
-                                 <td><?php echo $value_data['ProductID'];?></td>
-																 <td class="wrap"><?php echo strip_tags($value_data['ProductName']);?></td>
-																 <td class="wrap"><?php echo "<a href=\"".$value_data['Picture']."\" target=\"_blank\"><img src=\"".$value_data['Picture']."\" style=\"padding:10px;max-width:90px;\"></a>";?></td>
-
-   
-
-																 <td><?php echo ($value_data['Effective']=="1")?"Yes":"";?></td>
-                                 <td><a class="btn btn-default btn-icon-anim btn-circle btn-edit" href="<?=base_url();?>admin/product/update/<?php echo $value_data['ProductID'];?>"> <i class="fa fa-pencil"></i></a>
+                                 <td><?php echo $value_data['service_id'];?></td>
+								<td class="wrap"><?php echo strip_tags($value_data['service_name']);?></td>
+								<td class="wrap"><?php echo "<a href=\"".$value_data['service_img']."\" target=\"_blank\"><img src=\"".$value_data['service_img']."\" style=\"padding:10px;max-width:90px;\"></a>";?></td>
+								<td><?php echo $value_data['service_range'];?></td>
+								<td><?php echo ($value_data['Effective']=="1")?"Yes":"";?></td>
+                                 <td><a class="btn btn-default btn-icon-anim btn-circle btn-edit" href="<?=base_url();?>admin/product/update/<?php echo $value_data['service_id'];?>"> <i class="fa fa-pencil"></i></a>
 																 </td>
                                  <td>
 
-                                    <a class="btn btn-danger btn-icon-anim btn-circle btn-edit" href="javascript:del_confirm('Are you Sure want to delete this record?','<?=base_url();?>admin/product/delete/<?php echo $value_data['ProductID'];?>');"> <i class="fa fa-trash-o"></i></a>
+                                    <a class="btn btn-danger btn-icon-anim btn-circle btn-edit" href="javascript:del_confirm('Are you Sure want to delete this record?','<?=base_url();?>admin/product/delete/<?php echo $value_data['service_id'];?>');"> <i class="fa fa-trash-o"></i></a>
 
 
                                  </td>

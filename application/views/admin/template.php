@@ -105,12 +105,9 @@
             <a class="<?php echo ($activemenu=="newsupdate")? "active":""; ?>" href="/admin/newsupdate" data-toggle="collapse" data-target="#"><div class="pull-left"><i class="ti-desktop mr-10"></i><span class="right-nav-text">News & Activities</span></div><div class="pull-right"><i class="ti-angle-down "></i></div><div class="clearfix"></div></a>
           </li>
           <li>
-            <a class="<?php echo ($activemenu=="product")? "active":""; ?>" href="/admin/product" data-toggle="collapse" data-target="#"><div class="pull-left"><i class="ti-package mr-10"></i><span class="right-nav-text">Product</span></div><div class="pull-right"><i class="ti-angle-down "></i></div><div class="clearfix"></div></a>
+            <a class="<?php echo ($activemenu=="product")? "active":""; ?>" href="/admin/product" data-toggle="collapse" data-target="#"><div class="pull-left"><i class="ti-package mr-10"></i><span class="right-nav-text">Services</span></div><div class="pull-right"><i class="ti-angle-down "></i></div><div class="clearfix"></div></a>
           </li>
-          <li>
-            <a class="<?php echo ($activemenu=="promotion")? "active":""; ?>" href="/admin/promotion" data-toggle="collapse" data-target="#"><div class="pull-left"><i class="ti-package mr-10"></i><span class="right-nav-text">Promotion</span></div><div class="pull-right"><i class="ti-angle-down "></i></div><div class="clearfix"></div></a>
-          </li>
-
+          
 
           <li>
             <a class="<?php echo ($activemenu=="Logout")? "active":""; ?>" href="/admin/logout" data-toggle="collapse" data-target="#pages_dr9"><div class="pull-left"><i class="ti-unlock mr-10"></i><span class="right-nav-text">Logout</span></div><div class="pull-right"><i class="ti-angle-down "></i></div><div class="clearfix"></div></a>

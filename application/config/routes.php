@@ -84,6 +84,7 @@ $route['admin/promotion/delete/(:any)'] = 'admin_promotion/delete/$1';
 $route['admin/promotion/(:any)'] = 'admin_promotion/index/$1'; //$1 = page number
 
 $route['admin/product'] = 'admin_product/index';
+$route['admin/product/index/(:any)'] = 'admin_product/index/$1';
 $route['admin/product/list'] = 'admin_product/index';
 $route['admin/product/add'] = 'admin_product/add';
 $route['admin/product/update'] = 'admin_product/update';
