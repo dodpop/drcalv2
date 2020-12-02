@@ -2485,7 +2485,12 @@ h3 {
 .breadcam_about_bg {
   background-image: url(/public/img/bradcam.png);
 }
-
+.breadcam_about_bg_2 {
+  background-image: url(/public/img/bradcam2.png);
+}
+.breadcam_about_bg_3 {
+  background-image: url(/public/img/bradcam3.png);
+}
 
 /* line 4, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_bradcam.scss */
 .breadcam_bg_1 {
