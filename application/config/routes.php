@@ -91,3 +91,12 @@ $route['admin/product/update'] = 'admin_product/update';
 $route['admin/product/update/(:any)'] = 'admin_product/update/$1';
 $route['admin/product/delete/(:any)'] = 'admin_product/delete/$1';
 $route['admin/product/(:any)'] = 'admin_product/index/$1'; //$1 = page number
+
+$route['admin/client'] = 'admin_client/index';
+$route['admin/client/index/(:any)'] = 'admin_client/index/$1';
+$route['admin/client/list'] = 'admin_client/index';
+$route['admin/client/add'] = 'admin_client/add';
+$route['admin/client/update'] = 'admin_client/update';
+$route['admin/client/update/(:any)'] = 'admin_client/update/$1';
+$route['admin/client/delete/(:any)'] = 'admin_client/delete/$1';
+$route['admin/client/(:any)'] = 'admin_client/index/$1'; //$1 = page number

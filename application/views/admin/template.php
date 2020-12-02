@@ -107,7 +107,9 @@
           <li>
             <a class="<?php echo ($activemenu=="product")? "active":""; ?>" href="/admin/product" data-toggle="collapse" data-target="#"><div class="pull-left"><i class="ti-package mr-10"></i><span class="right-nav-text">Services</span></div><div class="pull-right"><i class="ti-angle-down "></i></div><div class="clearfix"></div></a>
           </li>
-          
+          <li>
+            <a class="<?php echo ($activemenu=="client")? "active":""; ?>" href="/admin/client" data-toggle="collapse" data-target="#"><div class="pull-left"><i class="ti-pin mr-10"></i><span class="right-nav-text">Clients</span></div><div class="pull-right"><i class="ti-angle-down "></i></div><div class="clearfix"></div></a>
+          </li>
 
           <li>
             <a class="<?php echo ($activemenu=="Logout")? "active":""; ?>" href="/admin/logout" data-toggle="collapse" data-target="#pages_dr9"><div class="pull-left"><i class="ti-unlock mr-10"></i><span class="right-nav-text">Logout</span></div><div class="pull-right"><i class="ti-angle-down "></i></div><div class="clearfix"></div></a>

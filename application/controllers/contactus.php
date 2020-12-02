@@ -34,7 +34,7 @@ class Contactus extends CI_Controller {
         $data['email'] = $email;
         $data['phone'] = $phone;
         $data['subject'] = $subject;
-        $data['msg'] = $msg;
+        $data['msg'] = $message;
 
         $recaptchaResponse = trim($this->input->post('g-recaptcha-response'));
 
@@ -80,12 +80,12 @@ class Contactus extends CI_Controller {
                       $this->load->library('email');
                       $config['mailtype'] = 'html';
                       $this->email->initialize($config);
-                      $this->email->from('noreply@doctorcalibration.com', 'Doctor Calibration Website');
+                      $this->email->from('sales@doctorcalibration.com', 'Doctor Calibration Website');
                       $emailadmin = "apimsarnwat@gmail.com";
 
                       $this->email->to($emailadmin);
                       //$this->email->cc('another@another-example.com');
-                      $this->email->bcc('apimsarnwat@gmail.com');
+                      // $this->email->bcc('apimsarnwat@gmail.com');
 
                       $this->email->subject('Contact us from Doctor Calibration Website.');
                       $contentemail = 'Contact us from Doctor Calibration Website.<br>';
