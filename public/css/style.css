@@ -1263,6 +1263,7 @@ h3 {
   /* line 8, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_slider.scss */
   .slider_area .single_slider {
     height: 420px;
+    background-position: 70%;
   }
 }
 
@@ -6341,3 +6342,13 @@ h6 {
 .easyPaginateNav a.current {font-weight:bold;text-decoration:underline;}
 
 /*# sourceMappingURL=style.css.map */
+
+
+.fadein { position:relative; min-height: 250px; }
+@media (min-width: 768px) {
+  .fadein { min-height: 350px; }
+}
+
+.fadein img { position:absolute; left:0; top:0;width: 100%; height: auto; }
+.full-width { float: left; width: 100%;}
+.half-width { float: left; width: 50%;}

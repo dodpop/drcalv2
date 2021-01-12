@@ -15,6 +15,9 @@ $(window).on('scroll', function () {
 
 $(document).ready(function(){
 
+  $('.fadein img:gt(0)').hide();
+    setInterval(function(){$('.fadein :first-child').fadeOut().next('img').fadeIn().end().appendTo('.fadein');}, 2500);
+
   $('#easyPaginate_blog').easyPaginate({
     paginateElement: 'article',
     elementsPerPage: 4,
