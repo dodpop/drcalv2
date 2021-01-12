@@ -20,7 +20,7 @@ $(document).ready(function(){
 
   $('#easyPaginate_blog').easyPaginate({
     paginateElement: 'article',
-    elementsPerPage: 4,
+    elementsPerPage: 6,
     effect: 'climb'
   });
 

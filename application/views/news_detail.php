@@ -23,7 +23,7 @@
          <div class="col-lg-12 mb-12 mb-lg-12" id="easyPaginate_blog">
              
                 
-               <article class="blog_item col-lg-12 col-md-12 col-xs-12">
+               <article class="blog_item blog_detail col-lg-12 col-md-12 col-xs-12">
                 
                     <h2><?php echo $value_data['Topic']; ?></h2>
                     <p><i class="fa fa-calendar" aria-hidden="true"></i> <?php echo $value_data['Duration']; ?>

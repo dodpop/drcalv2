@@ -22,7 +22,7 @@
                                 if(isset($news) && sizeof($news) > 0){
                                     foreach ($news as $key_data => $value_data){
                 ?>
-               <article class="blog_item col-lg-6 col-md-6 col-xs-12">
+               <article class="blog_item col-lg-4 col-md-4 col-xs-12">
                   <div class="blog_item_img" >
                             <?php
                             //Get a list of file paths using the glob function.
@@ -39,7 +39,7 @@
                   </div>
                   <div class="blog_details">
                      <a class="d-inline-block" href="news/detail/<?php echo $value_data['ID']; ?>">
-                        <h2><?php echo $value_data['Topic']; ?></h2>
+                        <strong><h4><?php echo $value_data['Topic']; ?></h4></strong>
                      </a>
                      <p><i class="fa fa-calendar" aria-hidden="true"></i> <?php echo $value_data['Duration']; ?>
                      <br><i class="fa fa-map-marker fa-6" aria-hidden="true"></i>&nbsp;&nbsp;<?php echo $value_data['Location']; ?>

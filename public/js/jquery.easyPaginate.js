@@ -156,12 +156,12 @@ $.fn.easyPaginate = function (options) {
             });
             
             plugin.currentElements = plugin.settings.objElements.slice(offsetStart, offsetEnd).clone();
-            plugin.currentElements.css({
-                'margin-left': plugin.settings.slideOffset,
-                'display': 'block',
-                'opacity': 0,
-                'min-width': plugin.el.width() / 2
-            });
+            // plugin.currentElements.css({
+            //     'margin-left': plugin.settings.slideOffset,
+            //     'display': 'block',
+            //     'opacity': 0,
+            //     'min-width': plugin.el.width() / 2
+            // });
             plugin.el.html(plugin.currentElements);
             plugin.currentElements.animate({
                 'margin-left': 0,
@@ -183,12 +183,12 @@ $.fn.easyPaginate = function (options) {
             });
             
             plugin.currentElements = plugin.settings.objElements.slice(offsetStart, offsetEnd).clone();
-            plugin.currentElements.css({
-                'margin-left': plugin.settings.slideOffset,
-                'display': 'block',
-                'opacity': 0,
-                'min-width': plugin.el.width() / 2
-            });
+            // plugin.currentElements.css({
+            //     'margin-left': plugin.settings.slideOffset,
+            //     'display': 'block',
+            //     'opacity': 0,
+            //     'min-width': plugin.el.width() / 2
+            // });
             plugin.el.html(plugin.currentElements);
             plugin.currentElements.each(function(i) {
                 var $objThis = $(this);

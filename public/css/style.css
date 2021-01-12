@@ -5155,6 +5155,11 @@ h6 {
 .blog_item {
   margin-bottom: 50px;
   float: left;
+  min-height: 480px;
+}
+
+.blog_item.blog_detail {
+  min-height: 0;
 }
 
 /* line 529, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_blog.scss */
