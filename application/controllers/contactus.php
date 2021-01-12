@@ -81,11 +81,11 @@ class Contactus extends CI_Controller {
                       $config['mailtype'] = 'html';
                       $this->email->initialize($config);
                       $this->email->from('sales@doctorcalibration.com', 'Doctor Calibration Website');
-                      $emailadmin = "apimsarnwat@gmail.com";
+                      $emailadmin = "info@doctorcalibration.com";
 
                       $this->email->to($emailadmin);
                       //$this->email->cc('another@another-example.com');
-                      // $this->email->bcc('apimsarnwat@gmail.com');
+                      $this->email->bcc('tanapat-it@3nholding.com');
 
                       $this->email->subject('Contact us from Doctor Calibration Website.');
                       $contentemail = 'Contact us from Doctor Calibration Website.<br>';
