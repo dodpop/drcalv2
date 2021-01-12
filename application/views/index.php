@@ -1,19 +1,7 @@
 <!-- slider_area_start -->
 <div class="slider_area">
 	<div class="slider_active owl-carousel">
-		<!-- <div class="single_slider  d-flex align-items-center slider_bg_2">
-			<div class="container">
-				<div class="row">
-					<div class="col-xl-12">
-						<div class="slider_text ">
-							<h3> <span>บริการ</span> <br>สอบเทียบเครื่องมือวัด </h3>
-							<p>ด้วยมาตรฐาน ISO/IEC 17025
-								<br> All Makes, All Models, All Volumes, One Company</p> <a href="/services" class="boxed-btn3">Check Our Services</a> </div>
-					</div>
-				</div>
-			</div>
-		</div> -->
-		<div class="single_slider  d-flex align-items-center slider_bg_new">
+		<div class="single_slider  d-flex align-items-center slider_bg_2">
 			<div class="container">
 				<div class="row">
 					<div class="col-xl-12">
@@ -25,6 +13,7 @@
 				</div>
 			</div>
 		</div>
+		 
 		
 	</div>
 </div>
